@@ -52,7 +52,18 @@ const paramTypes = {
   'pubmatic': {
     'publisherId': tryConvertString,
     'adSlot': tryConvertString
-  }
+  },
+  'districtmDMX': {
+    'id': tryConvertNumber,
+    'floor': tryConvertNumber,
+    'revShare': tryConvertNumber,
+    'currency': tryConvertString,
+  },
+  'pulsepoint': {
+    'cf': tryConvertString,
+    'cp': tryConvertNumber,
+    'ct': tryConvertNumber
+  },
 };
 
 let _cookiesQueued = false;
